@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag 'input.css' %>
+<%= form_with(model: sentence) do |form| %>
+  <div class="input">
+    <span>
+      <%= form.text_field :value, class: 'text-field' %>
+    </span>
+    <span>
+      <%= form.submit 'Create', class: 'submit' %>
+    </span>
+  </div>
+<% end %>
